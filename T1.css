@@ -1,0 +1,305 @@
+
+
+    @font-face {
+        font-family:"TT Trailers";
+        src: url(font/TT\ Trailers\ Trial\ Bold.ttf);
+      }
+
+      @font-face {
+        font-family:"Graphik";
+        src: url(font/Graphik-Regular-Trial.otf);
+      }
+
+
+      @font-face {
+        font-family:"GraphikL";
+        src: url(font/Graphik-Light-Trial.otf);
+      }
+      
+      @media screen {
+  
+    body {
+        background: rgb(255, 255, 255);
+        width: 100vw;
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+      
+    }
+
+    header {
+        font-family:"TT Trailers";
+        position: absolute;
+        font-size: 260px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 220px;
+        top: 16vh;
+        left: 13vw;
+
+        animation: slideInFromLeft 1s ease-out forwards;
+    }
+
+    @keyframes slideInFromLeft {
+      from {
+        transform: translateX(-120px);
+        
+      }
+      to {
+        transform: translateX(0);
+        }}
+
+    .sideways1 {
+        
+       position: absolute;
+       top: 3vh;
+       left: 13vw;
+       font-family: "TT Trailers";
+        font-size: 35px;
+        font-weight: 700;
+        transition: all 3s ease-out;
+    }
+
+    .sideways1 a:hover {
+    color: #e85e2f;
+      text-decoration: none;
+  }
+
+
+    .sideways2 {
+        
+      top: 2vh;
+      font-family: "TT Trailers";
+       font-size: 35px;
+       font-weight: 700;
+       text-align: center;
+       transition: all 3s ease-out;
+        
+          }
+            .sideways2 a:hover {
+            color: #e85e2f;
+              text-decoration: none;
+          }
+
+
+     .sideways3 {
+        
+        position: absolute;
+        top: 3vh;
+        right: 13vw;
+        font-family: "TT Trailers";
+         font-size: 35px;
+         font-weight: 700;
+         transition: all 3s ease-out;
+         
+         a{
+          color: black;
+          text-decoration: none;
+          }     
+     }
+
+     .sideways3 a:hover {
+      color: #e85e2f;
+        text-decoration: none;
+    }
+
+     .vector {
+      position: relative;  
+      height: 1px;
+        left: 0vw;
+         top: 1vh;
+        width: 90%;
+        background-color: #000000;
+      }
+
+    .description {
+        position: absolute;
+        top: 75vh;
+        left: 25.5vw;
+        width: 380px;
+        letter-spacing: auto;
+        font-size: 12px;
+        font-family:"Graphik";
+        animation: slideInFromLeft2 1s ease-out forwards;
+    }
+
+    @keyframes slideInFromLeft2 {
+      from {
+        transform: translateY(40px); }
+      to {
+        transform: translateY(0);
+        }}
+   
+       .name {
+         position: absolute;
+        top: 85vh;
+        left: 25.5vw;
+        width: 600px;
+        font-family:"TT Trailers";
+        font-size: 50px;
+        font-weight: 700;
+        animation: slideInFromLeft3 1s ease-out forwards;
+    }
+
+    @keyframes slideInFromLeft3 {
+      from {
+        transform: translateY(35px); }
+      to {
+        transform: translateY(0);
+        }}
+   
+
+    .img {
+        position: absolute;
+        top: 86.5vh;
+        left: 37vw;
+        object-fit: cover;
+        height: 38px; 
+        transition: transform 0.3s ease-in-out;
+        animation: slideInFromLeft3 1s ease-out;
+    }
+
+    .img:hover{
+        transform: translateX(20px);
+    }
+
+    .video {
+        position: absolute;
+        top: 11vh;
+        left: 51vw;
+        object-fit: cover;
+        height: 600px;
+        z-index: -1;
+    }
+
+     .title {
+      display: none; }
+
+    .jpg {
+        display: none; }
+
+      .sideways4 {
+        display: none;}
+}
+
+
+@page {
+  size: A4 portrait;
+  margin:0;
+}
+
+@media print {
+  html,
+
+  body {
+    margin: 0;
+    height: 297mm;
+    width: 210mm;
+    background: rgb(255, 255, 255);
+    overflow-y: hidden;
+  
+  }
+
+  .jpg {
+    float:top;
+    margin-top: 19mm;
+    margin-left:23mm;
+    
+    z-index: -10;
+}
+
+.jpg img {
+   
+    margin: 0 auto;
+    width: 80%;
+}
+  
+.title {
+  font-family:"TT Trailers";
+  font-size: 160px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 140px;
+  position: absolute;
+  margin-top: 5mm;
+  margin-left: 35mm;
+}
+
+.name {
+ position: relative;
+ margin-top: 41mm;
+ margin-left: -15mm;
+ left: 25.5vw;
+ width: 600px;
+ font-family:"TT Trailers";
+ font-size: 50px;
+ font-weight: 700;
+}
+
+.description {
+  float: right;
+  margin-top: 44mm;
+  margin-right: 40mm;
+  width: 266px;
+  letter-spacing: auto;
+  font-size: 12px;
+  font-family:"Graphik";
+}
+
+
+.sideways1 {
+      float: right;
+       margin-top: 12mm;
+       margin-right: 37mm;
+       font-family: "TT Trailers";
+        font-size: 42px;
+        font-weight: 700;
+        color: #e85e2f;
+}
+
+
+.sideways2 {
+  float: right;
+  margin-top: 24mm;
+  margin-right: -34mm;
+  font-family: "TT Trailers";
+   font-size: 42px;
+   font-weight: 700;
+}
+
+.sideways4 {
+
+  float: right;
+  margin-top: 36mm;
+  margin-right: -39mm;
+  font-family: "Graphik";
+   font-size: 19px;
+   font-weight: 700;
+}
+
+ .sideways3 {
+
+    display: none;
+    }
+    
+    .video {
+      display: none;
+    }
+    
+    header {
+    display: none;
+    }
+    
+    .vector {
+      display: none;
+    }
+    
+    .img {
+      display: none;
+    }
+  
+}
